@@ -1,0 +1,13 @@
+@regression
+Feature: Edit existing employee personal details
+  As an HR Admin
+  I want to edit an existing employee's personal details
+  So that records stay up to date
+
+  Scenario: Update middle name for an employee
+    Given I am logged in as admin
+    And I am on the PIM Employee List page
+    When I search employee by id "<EMP_ID>"
+    And I open the employee details
+    And I update middle name to "Prakash"
+    Then I should see middle name as "Prakash"

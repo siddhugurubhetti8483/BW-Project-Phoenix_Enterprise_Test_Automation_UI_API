@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.phoenix.tests.ui.PIMFlowTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testEditEmpInfo"/>
+          <include name="testDeleteEmpRecord"/>
+          <include name="tearDown"/>
+          <include name="preLogin"/>
+          <include name="testAddEmp"/>
+          <include name="searchAndValEmp"/>
+        </methods>
+      </class> <!-- com.phoenix.tests.ui.PIMFlowTest -->
+      <class name="com.phoenix.tests.api.EmployeeApiTest">
+        <methods>
+          <include name="deleteEmployee"/>
+          <include name="setup"/>
+          <include name="createEmployee"/>
+          <include name="getEmployees"/>
+        </methods>
+      </class> <!-- com.phoenix.tests.api.EmployeeApiTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

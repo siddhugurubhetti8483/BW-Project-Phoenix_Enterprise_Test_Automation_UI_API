@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="7" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-25T15:16:12 IST" name="Surefire suite" finished-at="2025-08-25T15:18:13 IST" duration-ms="121575">
+    <groups>
+    </groups>
+    <test started-at="2025-08-25T15:16:12 IST" name="Surefire test" finished-at="2025-08-25T15:18:13 IST" duration-ms="121575">
+      <class name="com.phoenix.tests.ui.AdminLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phoenix.tests.ui.AdminLoginTest@59d016c9]" started-at="2025-08-25T15:16:44 IST" name="setUp" finished-at="2025-08-25T15:16:53 IST" duration-ms="9120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAdmLogin()[pri:0, instance:com.phoenix.tests.ui.AdminLoginTest@59d016c9]" started-at="2025-08-25T15:16:53 IST" name="testAdmLogin" finished-at="2025-08-25T15:16:56 IST" duration-ms="3035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdmLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.phoenix.tests.ui.AdminLoginTest@59d016c9]" started-at="2025-08-25T15:16:56 IST" name="tearDown" finished-at="2025-08-25T15:16:56 IST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.phoenix.tests.ui.AdminLoginTest -->
+      <class name="com.phoenix.tests.api.EmployeeApiTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.phoenix.tests.api.EmployeeApiTest@96def03]" started-at="2025-08-25T15:16:12 IST" name="setup" finished-at="2025-08-25T15:16:12 IST" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getEmployees()[pri:1, instance:com.phoenix.tests.api.EmployeeApiTest@96def03]" started-at="2025-08-25T15:16:12 IST" name="getEmployees" finished-at="2025-08-25T15:16:17 IST" duration-ms="4412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployees -->
+        <test-method signature="createEmployee()[pri:3, instance:com.phoenix.tests.api.EmployeeApiTest@96def03]" started-at="2025-08-25T15:16:17 IST" name="createEmployee" finished-at="2025-08-25T15:16:43 IST" depends-on-methods="com.phoenix.tests.api.EmployeeApiTest.getEmployees" duration-ms="26638" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Failed after retries]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Failed after retries
+at com.phoenix.tests.api.EmployeeApiTest.withRetry(EmployeeApiTest.java:43)
+at com.phoenix.tests.api.EmployeeApiTest.createEmployee(EmployeeApiTest.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEmployee -->
+        <test-method signature="deleteEmployee()[pri:3, instance:com.phoenix.tests.api.EmployeeApiTest@96def03]" started-at="2025-08-25T15:16:44 IST" name="deleteEmployee" finished-at="2025-08-25T15:16:44 IST" depends-on-methods="com.phoenix.tests.api.EmployeeApiTest.createEmployee" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.phoenix.tests.api.EmployeeApiTest.deleteEmployee() on instance com.phoenix.tests.api.EmployeeApiTest@96def03 depends on not successfully finished methods 
+[com.phoenix.tests.api.EmployeeApiTest.createEmployee() on instance com.phoenix.tests.api.EmployeeApiTest@96def03]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.phoenix.tests.api.EmployeeApiTest.deleteEmployee() on instance com.phoenix.tests.api.EmployeeApiTest@96def03 depends on not successfully finished methods 
+[com.phoenix.tests.api.EmployeeApiTest.createEmployee() on instance com.phoenix.tests.api.EmployeeApiTest@96def03]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployee -->
+      </class> <!-- com.phoenix.tests.api.EmployeeApiTest -->
+      <class name="com.phoenix.tests.ui.PIMFlowTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phoenix.tests.ui.PIMFlowTest@3cc2931c]" started-at="2025-08-25T15:16:56 IST" name="setUp" finished-at="2025-08-25T15:17:02 IST" duration-ms="5645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="preLogin()[pri:0, instance:com.phoenix.tests.ui.PIMFlowTest@3cc2931c]" started-at="2025-08-25T15:17:02 IST" name="preLogin" finished-at="2025-08-25T15:17:10 IST" duration-ms="8362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preLogin -->
+        <test-method signature="testAddEmp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.phoenix.tests.ui.PIMFlowTest@3cc2931c]" started-at="2025-08-25T15:17:10 IST" name="testAddEmp" data-provider="employees" finished-at="2025-08-25T15:17:15 IST" depends-on-methods="com.phoenix.tests.ui.PIMFlowTest.preLogin" duration-ms="5151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ravi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[K]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sharma]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddEmp -->
+        <test-method signature="testAddEmp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.phoenix.tests.ui.PIMFlowTest@3cc2931c]" started-at="2025-08-25T15:17:15 IST" name="testAddEmp" data-provider="employees" finished-at="2025-08-25T15:17:20 IST" depends-on-methods="com.phoenix.tests.ui.PIMFlowTest.preLogin" duration-ms="4602" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Neha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Shaha]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddEmp -->
+        <test-method signature="searchAndValEmp()[pri:0, instance:com.phoenix.tests.ui.PIMFlowTest@3cc2931c]" started-at="2025-08-25T15:17:20 IST" name="searchAndValEmp" finished-at="2025-08-25T15:17:32 IST" depends-on-methods="com.phoenix.tests.ui.PIMFlowTest.testAddEmp" duration-ms="11995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAndValEmp -->
+        <test-method signature="testEditEmpInfo()[pri:0, instance:com.phoenix.tests.ui.PIMFlowTest@3cc2931c]" started-at="2025-08-25T15:17:32 IST" name="testEditEmpInfo" finished-at="2025-08-25T15:17:35 IST" depends-on-methods="com.phoenix.tests.ui.PIMFlowTest.searchAndValEmp" duration-ms="3003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditEmpInfo -->
+        <test-method signature="testDeleteEmpRecord()[pri:0, instance:com.phoenix.tests.ui.PIMFlowTest@3cc2931c]" started-at="2025-08-25T15:17:35 IST" name="testDeleteEmpRecord" finished-at="2025-08-25T15:18:13 IST" depends-on-methods="com.phoenix.tests.ui.PIMFlowTest.testEditEmpInfo" duration-ms="37714" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[After delete, no record found expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: After delete, no record found expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.phoenix.tests.ui.PIMFlowTest.testDeleteEmpRecord(PIMFlowTest.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteEmpRecord -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.phoenix.tests.ui.PIMFlowTest@3cc2931c]" started-at="2025-08-25T15:18:13 IST" name="tearDown" finished-at="2025-08-25T15:18:13 IST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.phoenix.tests.ui.PIMFlowTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

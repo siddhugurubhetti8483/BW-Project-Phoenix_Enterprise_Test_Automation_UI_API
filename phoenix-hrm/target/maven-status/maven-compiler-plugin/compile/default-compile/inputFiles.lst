@@ -1,0 +1,13 @@
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\core\BaseTest.java
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\core\Config.java
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\core\DriverFactory.java
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\core\TestContext.java
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\core\Waiter.java
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\core\WaitUtils.java
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\pages\DashboardPage.java
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\pages\LoginPage.java
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\pages\pim\AddEmployeePage.java
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\pages\pim\EmployeeDetailsPage.java
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\pages\pim\EmployeeListPage.java
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\reporting\ExtentManager.java
+D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\src\main\java\com\phoenix\reporting\TestListener.java

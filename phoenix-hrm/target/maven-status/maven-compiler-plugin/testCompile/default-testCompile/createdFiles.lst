@@ -1,0 +1,5 @@
+com\phoenix\bdd\runner\CucumberTestRunner.class
+com\phoenix\bdd\steps\EmployeeSteps.class
+com\phoenix\tests\ui\PIMFlowTest.class
+com\phoenix\tests\api\EmployeeApiTest.class
+com\phoenix\tests\ui\AdminLoginTest.class

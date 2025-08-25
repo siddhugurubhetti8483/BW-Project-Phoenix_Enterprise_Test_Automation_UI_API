@@ -1,0 +1,5 @@
+# Created at 2025-08-25T15:16:10.848
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Masai School\SDET - 25-03-25\BuildWeek\Phoenix – Enterprise Test Automation Framework for OrangeHRM (UI + API)\phoenix-hrm\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
